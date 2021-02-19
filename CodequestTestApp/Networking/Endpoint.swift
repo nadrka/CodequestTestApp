@@ -15,7 +15,7 @@ struct Endpoint {
     let path: String
     let httpMethod: HttpMethod
  
-    var url: URL? {
-        return URL(string: path)
+    func url(with baseUrl: String) -> URL? {
+        return URL(string: baseUrl + path)
     }
 }

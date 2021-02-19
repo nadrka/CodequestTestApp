@@ -8,7 +8,7 @@
 import Foundation
 
 protocol PostServiceProtocol {
-    func fetchPosts(completion: @escaping (Result<Post, Error>) -> ())
+    func fetchPosts(completion: @escaping (Result<[Post], Error>) -> ())
 }
 
 class PostService: PostServiceProtocol {
@@ -18,9 +18,9 @@ class PostService: PostServiceProtocol {
         self.client = client
     }
     
-    func fetchPosts(completion: @escaping (Result<Post, Error>) -> ()) {
+    func fetchPosts(completion: @escaping (Result<[Post], Error>) -> ()) {
         let endpoint = API.getPosts()
         
-        client.call(Output: Post.self, endpoint: endpoint, completion: completion)
+        client.call(Output: [Post].self, endpoint: endpoint, completion: completion)
     }
 }

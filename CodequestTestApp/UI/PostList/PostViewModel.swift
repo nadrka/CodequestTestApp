@@ -11,13 +11,16 @@ import Foundation
 
 
 final class PostListViewModel {
-    private let posts: [Post] = [
-        Post(userId: 1, title: "title 1", body: "body 1"),
-        Post(userId: 2, title: "title 2", body: "body 2")
-    ]
+    var onPostLoaded: (() -> ())? = nil
+    var onFailure: (() -> ())? = nil
     
+    private let postService: PostServiceProtocol
+    private var posts: [Post] = []
     
-    
+    init(postService: PostServiceProtocol) {
+        self.postService = postService
+    }
+
     var numberOfRows: Int {
         return posts.count
     }
@@ -28,6 +31,19 @@ final class PostListViewModel {
         }
         
         return posts[row]
+    }
+    
+    func fetchPosts() {
+        postService.fetchPosts { [weak self] result in
+            switch result {
+            case .success(let posts):
+                self?.posts = posts
+                self?.onPostLoaded?()
+            case .failure(_):
+                self?.onFailure?()
+                
+            }
+        }
     }
 
 }

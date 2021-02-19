@@ -24,6 +24,22 @@ final class PostTableViewController: UITableViewController {
         
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.reusableIdentifier)
         tableView.tableFooterView = UIView()
+        
+        bindViewModel()
+        viewModel.fetchPosts()
+    }
+    
+    private func bindViewModel() {
+        viewModel.onPostLoaded = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+            
+        }
+        
+        viewModel.onFailure = { 
+            print("error")
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
