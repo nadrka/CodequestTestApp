@@ -23,7 +23,8 @@
 		3C66104425E0069600D6B2C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104325E0069600D6B2C6 /* API.swift */; };
 		3C66104725E006AD00D6B2C6 /* API+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104625E006AD00D6B2C6 /* API+Post.swift */; };
 		3C66104B25E0071400D6B2C6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104A25E0071400D6B2C6 /* PostService.swift */; };
-		3C66105525E00BC800D6B2C6 /* CodequestTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */; };
+		3C66107425E00D2000D6B2C6 /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66107325E00D2000D6B2C6 /* PostViewModelTests.swift */; };
+		3C66107B25E00DA500D6B2C6 /* FakePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66107A25E00DA500D6B2C6 /* FakePostService.swift */; };
 		C24F50EAC56BED6AB495D518 /* Pods_CodequestTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865ED545ED7C216CE6E117B7 /* Pods_CodequestTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +58,9 @@
 		3C66104625E006AD00D6B2C6 /* API+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Post.swift"; sourceTree = "<group>"; };
 		3C66104A25E0071400D6B2C6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		3C66105225E00BC800D6B2C6 /* CodequestTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodequestTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodequestTestAppTests.swift; sourceTree = "<group>"; };
 		3C66105625E00BC800D6B2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C66107325E00D2000D6B2C6 /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
+		3C66107A25E00DA500D6B2C6 /* FakePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePostService.swift; sourceTree = "<group>"; };
 		52D6063E61BFC263A17445E1 /* Pods-CodequestTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodequestTestApp.release.xcconfig"; path = "Target Support Files/Pods-CodequestTestApp/Pods-CodequestTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		5ECA9889633152F1B2B40D2F /* Pods_CodequestTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodequestTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		865ED545ED7C216CE6E117B7 /* Pods_CodequestTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodequestTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,10 +190,19 @@
 		3C66105325E00BC800D6B2C6 /* CodequestTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */,
+				3C66107925E00D9300D6B2C6 /* Fakes */,
 				3C66105625E00BC800D6B2C6 /* Info.plist */,
+				3C66107325E00D2000D6B2C6 /* PostViewModelTests.swift */,
 			);
 			path = CodequestTestAppTests;
+			sourceTree = "<group>";
+		};
+		3C66107925E00D9300D6B2C6 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				3C66107A25E00DA500D6B2C6 /* FakePostService.swift */,
+			);
+			path = Fakes;
 			sourceTree = "<group>";
 		};
 		619BD66FE458469F85A0FC02 /* Frameworks */ = {
@@ -400,7 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C66105525E00BC800D6B2C6 /* CodequestTestAppTests.swift in Sources */,
+				3C66107B25E00DA500D6B2C6 /* FakePostService.swift in Sources */,
+				3C66107425E00D2000D6B2C6 /* PostViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
