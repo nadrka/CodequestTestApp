@@ -1,0 +1,6 @@
+framework module Pods_CodequestTestApp {
+  umbrella header "Pods-CodequestTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

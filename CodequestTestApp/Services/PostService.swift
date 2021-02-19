@@ -21,6 +21,6 @@ class PostService: PostServiceProtocol {
     func fetchPosts(completion: @escaping (Result<[Post], Error>) -> ()) {
         let endpoint = API.getPosts()
         
-        client.call(Output: [Post].self, endpoint: endpoint, completion: completion)
+        client.call(type: [Post].self, endpoint: endpoint, completion: completion)
     }
 }
