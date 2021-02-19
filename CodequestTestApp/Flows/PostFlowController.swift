@@ -13,9 +13,9 @@ final class PostFlowController: FlowController {
     }
     
     private func showPostListScreen() {
-        let viewController = ViewController()
+        let viewModel = PostListViewModel()
+        let viewController = PostTableViewController(viewModel: viewModel)
         rootViewController.viewControllers = [viewController]
     }
-    
     
 }
