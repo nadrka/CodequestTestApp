@@ -11,6 +11,8 @@
 		3C288FE225DFF62D007B352E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C288FE125DFF62D007B352E /* ViewController.swift */; };
 		3C288FE725DFF62F007B352E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C288FE625DFF62F007B352E /* Assets.xcassets */; };
 		3C288FEA25DFF62F007B352E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C288FE825DFF62F007B352E /* LaunchScreen.storyboard */; };
+		3C288FFB25DFF8AD007B352E /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C288FFA25DFF8AD007B352E /* MainFlowController.swift */; };
+		3C288FFE25DFF952007B352E /* PostFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C288FFD25DFF952007B352E /* PostFlowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		3C288FE625DFF62F007B352E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C288FE925DFF62F007B352E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C288FEB25DFF62F007B352E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C288FFA25DFF8AD007B352E /* MainFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
+		3C288FFD25DFF952007B352E /* PostFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFlowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		3C288FF425DFF813007B352E /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				3C288FFA25DFF8AD007B352E /* MainFlowController.swift */,
+				3C288FFD25DFF952007B352E /* PostFlowController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C288FFB25DFF8AD007B352E /* MainFlowController.swift in Sources */,
+				3C288FFE25DFF952007B352E /* PostFlowController.swift in Sources */,
 				3C288FE225DFF62D007B352E /* ViewController.swift in Sources */,
 				3C288FDE25DFF62D007B352E /* AppDelegate.swift in Sources */,
 			);
