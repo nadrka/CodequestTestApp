@@ -34,7 +34,6 @@ final class PostTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
-            
         }
         
         viewModel.onFailure = { 

@@ -8,8 +8,6 @@
 import Foundation
 
 
-
-
 final class PostListViewModel {
     var onPostLoaded: (() -> ())? = nil
     var onFailure: (() -> ())? = nil

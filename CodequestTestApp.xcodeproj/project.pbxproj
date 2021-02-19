@@ -22,7 +22,18 @@
 		3C66104425E0069600D6B2C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104325E0069600D6B2C6 /* API.swift */; };
 		3C66104725E006AD00D6B2C6 /* API+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104625E006AD00D6B2C6 /* API+Post.swift */; };
 		3C66104B25E0071400D6B2C6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104A25E0071400D6B2C6 /* PostService.swift */; };
+		3C66105525E00BC800D6B2C6 /* CodequestTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C66105725E00BC800D6B2C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C288FD225DFF62D007B352E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C288FD925DFF62D007B352E;
+			remoteInfo = CodequestTestApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C288FDA25DFF62D007B352E /* CodequestTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodequestTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +53,20 @@
 		3C66104325E0069600D6B2C6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3C66104625E006AD00D6B2C6 /* API+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Post.swift"; sourceTree = "<group>"; };
 		3C66104A25E0071400D6B2C6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3C66105225E00BC800D6B2C6 /* CodequestTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodequestTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodequestTestAppTests.swift; sourceTree = "<group>"; };
+		3C66105625E00BC800D6B2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C288FD725DFF62D007B352E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C66104F25E00BC700D6B2C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3C288FDC25DFF62D007B352E /* CodequestTestApp */,
+				3C66105325E00BC800D6B2C6 /* CodequestTestAppTests */,
 				3C288FDB25DFF62D007B352E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3C288FDA25DFF62D007B352E /* CodequestTestApp.app */,
+				3C66105225E00BC800D6B2C6 /* CodequestTestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +173,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		3C66105325E00BC800D6B2C6 /* CodequestTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C66105425E00BC800D6B2C6 /* CodequestTestAppTests.swift */,
+				3C66105625E00BC800D6B2C6 /* Info.plist */,
+			);
+			path = CodequestTestAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +202,24 @@
 			productReference = 3C288FDA25DFF62D007B352E /* CodequestTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3C66105125E00BC700D6B2C6 /* CodequestTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C66105925E00BC800D6B2C6 /* Build configuration list for PBXNativeTarget "CodequestTestAppTests" */;
+			buildPhases = (
+				3C66104E25E00BC700D6B2C6 /* Sources */,
+				3C66104F25E00BC700D6B2C6 /* Frameworks */,
+				3C66105025E00BC700D6B2C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C66105825E00BC800D6B2C6 /* PBXTargetDependency */,
+			);
+			name = CodequestTestAppTests;
+			productName = CodequestTestAppTests;
+			productReference = 3C66105225E00BC800D6B2C6 /* CodequestTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +231,10 @@
 				TargetAttributes = {
 					3C288FD925DFF62D007B352E = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					3C66105125E00BC700D6B2C6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3C288FD925DFF62D007B352E;
 					};
 				};
 			};
@@ -198,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				3C288FD925DFF62D007B352E /* CodequestTestApp */,
+				3C66105125E00BC700D6B2C6 /* CodequestTestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +264,13 @@
 			files = (
 				3C288FEA25DFF62F007B352E /* LaunchScreen.storyboard in Resources */,
 				3C288FE725DFF62F007B352E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C66105025E00BC700D6B2C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +297,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C66104E25E00BC700D6B2C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C66105525E00BC800D6B2C6 /* CodequestTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C66105825E00BC800D6B2C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C288FD925DFF62D007B352E /* CodequestTestApp */;
+			targetProxy = 3C66105725E00BC800D6B2C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C288FE825DFF62F007B352E /* LaunchScreen.storyboard */ = {
@@ -401,6 +479,44 @@
 			};
 			name = Release;
 		};
+		3C66105A25E00BC800D6B2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodequestTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hanzaliderdevelopers.CodequestTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodequestTestApp.app/CodequestTestApp";
+			};
+			name = Debug;
+		};
+		3C66105B25E00BC800D6B2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodequestTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hanzaliderdevelopers.CodequestTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodequestTestApp.app/CodequestTestApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +534,15 @@
 			buildConfigurations = (
 				3C288FEF25DFF62F007B352E /* Debug */,
 				3C288FF025DFF62F007B352E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C66105925E00BC800D6B2C6 /* Build configuration list for PBXNativeTarget "CodequestTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C66105A25E00BC800D6B2C6 /* Debug */,
+				3C66105B25E00BC800D6B2C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
