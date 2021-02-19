@@ -19,6 +19,9 @@
 		3C28900A25DFFFCF007B352E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900925DFFFCF007B352E /* TableViewCell.swift */; };
 		3C28900D25E00074007B352E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900C25E00074007B352E /* Client.swift */; };
 		3C28901025E00174007B352E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900F25E00174007B352E /* Endpoint.swift */; };
+		3C66104425E0069600D6B2C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104325E0069600D6B2C6 /* API.swift */; };
+		3C66104725E006AD00D6B2C6 /* API+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104625E006AD00D6B2C6 /* API+Post.swift */; };
+		3C66104B25E0071400D6B2C6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66104A25E0071400D6B2C6 /* PostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		3C28900925DFFFCF007B352E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3C28900C25E00074007B352E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		3C28900F25E00174007B352E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3C66104325E0069600D6B2C6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3C66104625E006AD00D6B2C6 /* API+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Post.swift"; sourceTree = "<group>"; };
+		3C66104A25E0071400D6B2C6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		3C288FDC25DFF62D007B352E /* CodequestTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				3C66104925E0070100D6B2C6 /* Services */,
 				3C288FF825DFF834007B352E /* Models */,
 				3C288FF725DFF82C007B352E /* Networking */,
 				3C288FF625DFF825007B352E /* Extensions */,
@@ -111,6 +118,8 @@
 			children = (
 				3C28900C25E00074007B352E /* Client.swift */,
 				3C28900F25E00174007B352E /* Endpoint.swift */,
+				3C66104325E0069600D6B2C6 /* API.swift */,
+				3C66104625E006AD00D6B2C6 /* API+Post.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -131,6 +140,14 @@
 				3C28900925DFFFCF007B352E /* TableViewCell.swift */,
 			);
 			path = PostList;
+			sourceTree = "<group>";
+		};
+		3C66104925E0070100D6B2C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C66104A25E0071400D6B2C6 /* PostService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C66104725E006AD00D6B2C6 /* API+Post.swift in Sources */,
+				3C66104425E0069600D6B2C6 /* API.swift in Sources */,
 				3C288FFB25DFF8AD007B352E /* MainFlowController.swift in Sources */,
 				3C28900A25DFFFCF007B352E /* TableViewCell.swift in Sources */,
 				3C28900725DFFB73007B352E /* PostViewModel.swift in Sources */,
@@ -210,6 +229,7 @@
 				3C28901025E00174007B352E /* Endpoint.swift in Sources */,
 				3C288FDE25DFF62D007B352E /* AppDelegate.swift in Sources */,
 				3C28900425DFFB61007B352E /* PostListViewController.swift in Sources */,
+				3C66104B25E0071400D6B2C6 /* PostService.swift in Sources */,
 				3C28900125DFFAC7007B352E /* Post.swift in Sources */,
 				3C28900D25E00074007B352E /* Client.swift in Sources */,
 			);

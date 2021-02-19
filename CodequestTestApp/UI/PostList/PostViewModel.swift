@@ -16,6 +16,8 @@ final class PostListViewModel {
         Post(userId: 2, title: "title 2", body: "body 2")
     ]
     
+    
+    
     var numberOfRows: Int {
         return posts.count
     }
