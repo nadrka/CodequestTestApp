@@ -17,6 +17,8 @@
 		3C28900425DFFB61007B352E /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900325DFFB61007B352E /* PostListViewController.swift */; };
 		3C28900725DFFB73007B352E /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900625DFFB73007B352E /* PostViewModel.swift */; };
 		3C28900A25DFFFCF007B352E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900925DFFFCF007B352E /* TableViewCell.swift */; };
+		3C28900D25E00074007B352E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900C25E00074007B352E /* Client.swift */; };
+		3C28901025E00174007B352E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28900F25E00174007B352E /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3C28900325DFFB61007B352E /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		3C28900625DFFB73007B352E /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		3C28900925DFFFCF007B352E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3C28900C25E00074007B352E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		3C28900F25E00174007B352E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		3C288FF725DFF82C007B352E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3C28900C25E00074007B352E /* Client.swift */,
+				3C28900F25E00174007B352E /* Endpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				3C28900725DFFB73007B352E /* PostViewModel.swift in Sources */,
 				3C288FFE25DFF952007B352E /* PostFlowController.swift in Sources */,
 				3C288FE225DFF62D007B352E /* ViewController.swift in Sources */,
+				3C28901025E00174007B352E /* Endpoint.swift in Sources */,
 				3C288FDE25DFF62D007B352E /* AppDelegate.swift in Sources */,
 				3C28900425DFFB61007B352E /* PostListViewController.swift in Sources */,
 				3C28900125DFFAC7007B352E /* Post.swift in Sources */,
